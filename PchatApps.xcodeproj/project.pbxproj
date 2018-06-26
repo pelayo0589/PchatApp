@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77D085AD978D9D3FCEDF113A /* Pods_PchatApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFD45A9F4C8B6062D95BEC0 /* Pods_PchatApps.framework */; };
 		C63049E220E25A7D0022AF28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63049E120E25A7D0022AF28 /* AppDelegate.swift */; };
 		C63049E420E25A7D0022AF28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63049E320E25A7D0022AF28 /* ViewController.swift */; };
 		C63049E720E25A7D0022AF28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63049E520E25A7D0022AF28 /* Main.storyboard */; };
 		C63049E920E25A7D0022AF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63049E820E25A7D0022AF28 /* Assets.xcassets */; };
 		C63049EC20E25A7D0022AF28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63049EA20E25A7D0022AF28 /* LaunchScreen.storyboard */; };
+		C63049F720E2A0430022AF28 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63049F620E2A0430022AF28 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FFD45A9F4C8B6062D95BEC0 /* Pods_PchatApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PchatApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5670E3218892E940AC6C08E4 /* Pods-PchatApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PchatApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-PchatApps/Pods-PchatApps.release.xcconfig"; sourceTree = "<group>"; };
 		C63049DE20E25A7D0022AF28 /* PchatApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PchatApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63049E120E25A7D0022AF28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C63049E320E25A7D0022AF28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		C63049E820E25A7D0022AF28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C63049EB20E25A7D0022AF28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C63049ED20E25A7D0022AF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C63049F420E2A0410022AF28 /* PchatApps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PchatApps-Bridging-Header.h"; sourceTree = "<group>"; };
+		C63049F520E2A0420022AF28 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		C63049F620E2A0430022AF28 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		FDDBF3C8DD344A0AC3D0E3D9 /* Pods-PchatApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PchatApps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PchatApps/Pods-PchatApps.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D085AD978D9D3FCEDF113A /* Pods_PchatApps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		028740C8F1672D1AE68CD4AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FFD45A9F4C8B6062D95BEC0 /* Pods_PchatApps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C5EFF49AF66D6FCB4EAC6F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDDBF3C8DD344A0AC3D0E3D9 /* Pods-PchatApps.debug.xcconfig */,
+				5670E3218892E940AC6C08E4 /* Pods-PchatApps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C63049D520E25A7D0022AF28 = {
 			isa = PBXGroup;
 			children = (
 				C63049E020E25A7D0022AF28 /* PchatApps */,
 				C63049DF20E25A7D0022AF28 /* Products */,
+				3C5EFF49AF66D6FCB4EAC6F5 /* Pods */,
+				028740C8F1672D1AE68CD4AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +82,7 @@
 		C63049E020E25A7D0022AF28 /* PchatApps */ = {
 			isa = PBXGroup;
 			children = (
+				C63049F320E29FD20022AF28 /* Supporting Files */,
 				C63049E120E25A7D0022AF28 /* AppDelegate.swift */,
 				C63049E320E25A7D0022AF28 /* ViewController.swift */,
 				C63049E520E25A7D0022AF28 /* Main.storyboard */,
@@ -64,6 +93,16 @@
 			path = PchatApps;
 			sourceTree = "<group>";
 		};
+		C63049F320E29FD20022AF28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C63049F520E2A0420022AF28 /* SWRevealViewController.h */,
+				C63049F620E2A0430022AF28 /* SWRevealViewController.m */,
+				C63049F420E2A0410022AF28 /* PchatApps-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C63049F020E25A7D0022AF28 /* Build configuration list for PBXNativeTarget "PchatApps" */;
 			buildPhases = (
+				D806FC1E227E4894268E2F97 /* [CP] Check Pods Manifest.lock */,
 				C63049DA20E25A7D0022AF28 /* Sources */,
 				C63049DB20E25A7D0022AF28 /* Frameworks */,
 				C63049DC20E25A7D0022AF28 /* Resources */,
+				1383CE33D7BCEDD084EDA733 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					C63049DD20E25A7D0022AF28 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +173,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1383CE33D7BCEDD084EDA733 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PchatApps/Pods-PchatApps-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PchatApps/Pods-PchatApps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D806FC1E227E4894268E2F97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PchatApps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C63049DA20E25A7D0022AF28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +225,7 @@
 			files = (
 				C63049E420E25A7D0022AF28 /* ViewController.swift in Sources */,
 				C63049E220E25A7D0022AF28 /* AppDelegate.swift in Sources */,
+				C63049F720E2A0430022AF28 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +360,18 @@
 		};
 		C63049F120E25A7D0022AF28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDBF3C8DD344A0AC3D0E3D9 /* Pods-PchatApps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JRJDR3QJ2K;
 				INFOPLIST_FILE = PchatApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pelayo.PchatApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PchatApps/Supporting Files/PchatApps-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +379,17 @@
 		};
 		C63049F220E25A7D0022AF28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5670E3218892E940AC6C08E4 /* Pods-PchatApps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JRJDR3QJ2K;
 				INFOPLIST_FILE = PchatApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pelayo.PchatApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PchatApps/Supporting Files/PchatApps-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
