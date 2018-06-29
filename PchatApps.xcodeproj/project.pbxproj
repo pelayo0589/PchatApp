@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		77D085AD978D9D3FCEDF113A /* Pods_PchatApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFD45A9F4C8B6062D95BEC0 /* Pods_PchatApps.framework */; };
 		C63049E220E25A7D0022AF28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63049E120E25A7D0022AF28 /* AppDelegate.swift */; };
-		C63049E420E25A7D0022AF28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63049E320E25A7D0022AF28 /* ViewController.swift */; };
 		C63049E720E25A7D0022AF28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63049E520E25A7D0022AF28 /* Main.storyboard */; };
 		C63049E920E25A7D0022AF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63049E820E25A7D0022AF28 /* Assets.xcassets */; };
 		C63049EC20E25A7D0022AF28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63049EA20E25A7D0022AF28 /* LaunchScreen.storyboard */; };
 		C63049F720E2A0430022AF28 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63049F620E2A0430022AF28 /* SWRevealViewController.m */; };
+		C63049FC20E2A6B10022AF28 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63049FB20E2A6B10022AF28 /* ChannelVC.swift */; };
+		C63049FE20E2A6DC0022AF28 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63049FD20E2A6DC0022AF28 /* ChatVC.swift */; };
+		C6304A0020E6BF2E0022AF28 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63049FF20E6BF2E0022AF28 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +23,6 @@
 		5670E3218892E940AC6C08E4 /* Pods-PchatApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PchatApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-PchatApps/Pods-PchatApps.release.xcconfig"; sourceTree = "<group>"; };
 		C63049DE20E25A7D0022AF28 /* PchatApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PchatApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63049E120E25A7D0022AF28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C63049E320E25A7D0022AF28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C63049E620E25A7D0022AF28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C63049E820E25A7D0022AF28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C63049EB20E25A7D0022AF28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,6 +30,9 @@
 		C63049F420E2A0410022AF28 /* PchatApps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PchatApps-Bridging-Header.h"; sourceTree = "<group>"; };
 		C63049F520E2A0420022AF28 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		C63049F620E2A0430022AF28 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C63049FB20E2A6B10022AF28 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		C63049FD20E2A6DC0022AF28 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		C63049FF20E6BF2E0022AF28 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		FDDBF3C8DD344A0AC3D0E3D9 /* Pods-PchatApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PchatApps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PchatApps/Pods-PchatApps.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,9 +86,11 @@
 		C63049E020E25A7D0022AF28 /* PchatApps */ = {
 			isa = PBXGroup;
 			children = (
+				C63049FA20E2A66B0022AF28 /* Modal */,
+				C63049F920E2A65F0022AF28 /* View */,
+				C63049F820E2A65A0022AF28 /* Controller */,
 				C63049F320E29FD20022AF28 /* Supporting Files */,
 				C63049E120E25A7D0022AF28 /* AppDelegate.swift */,
-				C63049E320E25A7D0022AF28 /* ViewController.swift */,
 				C63049E520E25A7D0022AF28 /* Main.storyboard */,
 				C63049E820E25A7D0022AF28 /* Assets.xcassets */,
 				C63049EA20E25A7D0022AF28 /* LaunchScreen.storyboard */,
@@ -101,6 +107,30 @@
 				C63049F420E2A0410022AF28 /* PchatApps-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C63049F820E2A65A0022AF28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C63049FB20E2A6B10022AF28 /* ChannelVC.swift */,
+				C63049FD20E2A6DC0022AF28 /* ChatVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C63049F920E2A65F0022AF28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C63049FF20E6BF2E0022AF28 /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C63049FA20E2A66B0022AF28 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C63049E420E25A7D0022AF28 /* ViewController.swift in Sources */,
+				C63049FE20E2A6DC0022AF28 /* ChatVC.swift in Sources */,
 				C63049E220E25A7D0022AF28 /* AppDelegate.swift in Sources */,
+				C6304A0020E6BF2E0022AF28 /* GradientView.swift in Sources */,
+				C63049FC20E2A6B10022AF28 /* ChannelVC.swift in Sources */,
 				C63049F720E2A0430022AF28 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
